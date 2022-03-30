@@ -1,0 +1,71 @@
+@import "vars";
+
+.categories {
+  padding: 60px 0;
+  text-align: center;
+
+  &__item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 419px;
+    background-image: url("../images/men-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+
+    &--woman {
+      margin-top: 30px;
+      background-image: url("../images/women-img.jpg");
+    }
+
+    &--accessories {
+      margin-top: 30px;
+      background-image: url("../images/accessories-img.jpg");
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: "$secondary-font";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $light;
+    transition: all 01s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .categories__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .categories__item--woman,
+  .categories__item--accessories {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .categories__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .categories__list {
+    gap: 30px;
+  }
+}

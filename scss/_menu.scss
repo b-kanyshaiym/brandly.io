@@ -1,0 +1,47 @@
+@import "vars";
+
+.menu {
+  width: 100%;
+  position: absolute;
+  top: 66px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  text-align: center;
+  list-style: none;
+  background-color: $light-grey;
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 18px;
+    color: $accent;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s;
+  }
+  &__link:hover {
+    color: lighten($accent, 30%);
+  }
+
+  .active {
+    color: lighten($accent, 30%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background-color: $light;
+
+    &__item + &__item {
+      margin: 0 0 0 53px;
+    }
+  }
+}
