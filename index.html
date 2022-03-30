@@ -4,7 +4,128 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Brandly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo logo" href="#">
+              <img src="images/logo.jpg" alt="Brandly" />
+            </a>
+
+            <nav class="header__nav">
+              <ul class="menu menu-show">
+                <li class="menu__item">
+                  <a class="menu__link active" href="#">home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">shop</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">brands</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">blog</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__toggle">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="index-main">
+        <section class="hero overlay">
+          <div class="container">
+            <h2 class="hero__title">Spring / Summer Collection</h2>
+            <p class="hero__info">
+              <strong>UP TO 60% DISCOUNT ON NEW ARRIVALS</strong>
+            </p>
+            <p class="hero__info-secondary">
+              TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
+            </p>
+            <a class="btn hero__link" href="#">shop now</a>
+          </div>
+        </section>
+
+        <section class="categories">
+          <div class="container">
+            <h2 class="section-title categories__title">categories</h2>
+            <ul class="categories__list">
+              <li class="categories__item categories__item--man overlay">
+                <a class="categories__link" href="#">Man</a>
+              </li>
+              <li class="categories__item categories__item--woman overlay">
+                <a class="categories__link" href="#">Women</a>
+              </li>
+              <li
+                class="categories__item categories__item--accessories overlay"
+              >
+                <a class="categories__link" href="#">Accessories</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="blog">
+          <div class="container">
+            <h2 class="section-title blog__title">from the blog</h2>
+
+            <ul class="blog__list">
+              <li class="blog__item">
+                <img class="blog__item-img" src="images/mask.jpg" alt="mask" />
+                <h3 class="blog__item-title">GERMAN FASHION WIZARDS</h3>
+                <p class="blog__item-details">
+                  By James Steed <span>|</span> Fashion
+                </p>
+                <p class="blog__item-leed">
+                  This week we had the chance of interviewing two creative
+                  artists from Germany. These guys are simply amazing at what
+                  they do with the European fashion scene and this year at Paris
+                  Fashion Week they introduced their new collection.
+                </p>
+                <a href="#" class="btn blog__item-link">Read more</a>
+              </li>
+
+              <li class="blog__item">
+                <img class="blog__item-img" src="images/mask.jpg" alt="mask" />
+                <h3 class="blog__item-title">GERMAN FASHION WIZARDS</h3>
+                <p class="blog__item-details">
+                  By James Steed <span>|</span> Fashion
+                </p>
+                <p class="blog__item-leed">
+                  This week we had the chance of interviewing two creative
+                  artists from Germany. These guys are simply amazing at what
+                  they do with the European fashion scene and this year at Paris
+                  Fashion Week they introduced their new collection.
+                </p>
+                <a href="#" class="btn blog__item-link">Read more</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer overlay">
+        <div class="container">
+          <p>Copyright Brandly. 2020</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
